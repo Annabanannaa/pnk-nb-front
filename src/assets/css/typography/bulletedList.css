@@ -1,0 +1,18 @@
+@layer base {
+    ul:not(.multiselect-options) {
+        @apply space-y-6 sm:space-y-4;
+
+        ol, ul {
+            @apply ml-4 mt-4;
+        }
+
+        &>li:not(.multiselect-options) {
+            @apply relative;
+
+            &::before {
+                 @apply w-1 h-1 mb-[3px] mr-1 rounded-full bg-black inline-block;
+                 content: '';
+            }
+        }
+    }
+}

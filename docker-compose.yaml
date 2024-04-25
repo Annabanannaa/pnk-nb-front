@@ -1,0 +1,40 @@
+version: '3.4'
+
+services:
+    varnish:
+        image: varnish:7.4
+        volumes:
+            - ./varnish/default.vcl:/etc/varnish/default.vcl:ro
+        depends_on:
+            - nginx
+            - imgproxy
+
+    nginx:
+        image: nginx:1.24.0
+        volumes:
+            - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+        depends_on:
+            - frontend
+
+    frontend:
+        restart: unless-stopped
+        build:
+            context: ./src
+        environment:
+            TZ: "${TIMEZONE}"
+            NUXT_PUBLIC_API_URL: "${API_URL}"
+            NUXT_PUBLIC_APP_URL: "${APP_URL}"
+            NUXT_PUBLIC_YA_CAPTCHA: "${YA_CAPTCHA_KEY}"
+
+    imgproxy:
+        image: darthsim/imgproxy:v3.13
+        volumes:
+            - ./src/public/images:/app/images:cached
+        environment:
+            IMGPROXY_QUALITY: "100"
+            IMGPROXY_TTL: "31536000"
+            IMGPROXY_MAX_SRC_RESOLUTION: "9999"
+            IMGPROXY_ENABLE_WEBP_DETECTION: "1"
+            IMGPROXY_ENFORCE_WEBP: "1"
+            IMGPROXY_LOCAL_FILESYSTEM_ROOT: "/app"
+

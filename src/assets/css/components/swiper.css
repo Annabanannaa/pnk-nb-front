@@ -1,0 +1,13 @@
+/* Кастомизация Popper-а https://floating-vue.starpad.dev/guide/css */
+.swiper-button-prev, .swiper-button-next {
+    @apply h-12 w-12 !left-0 !relative after:hidden md:min-w-10 flex items-center justify-center bg-blue-300 hover:bg-blue-550 rounded-2xl md:rounded-xl text-white hover:text-white;
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+    @apply !w-7 md:w-5 !h-7 md:h-5;
+}
+
+.swiper-button-disabled {
+    @apply !opacity-100 text-gray-500 hover:text-gray-500 bg-gray-50 hover:bg-gray-50;
+}
+

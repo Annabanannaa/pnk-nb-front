@@ -1,0 +1,23 @@
+export const VALIDATION_MESSAGES = {
+    REQUIRED: 'Это поле является обязательным',
+    EMAIL_INCORRECT: 'Некорректный e-mail',
+    PASSWORD_INCORRECT: 'Некорректный пароль',
+    PHONE_INCORRECT: 'Некорректный телефон',
+    VALUE_INCORRECT: 'Некорректно задано значение',
+    CITY_INCORRECT: 'Некорректно выбран город',
+    DATE_INCORRECT: 'Некорректный формат даты',
+    LANGUAGE_INCORRECT: 'Некорректно выбран язык',
+    YEAR_INCORRECT: 'Некорректный год',
+    CHOOSE_ONE_VARIANT: 'Выберите хотя бы один вариант',
+    CHOOSE_CITY: 'Выберите город',
+    AT_LEAST_5_CHARS: 'Не менее 5 символов',
+    AT_LEAST_8_CHARS: 'Не менее 8 символов',
+    NO_MORE_THAN_128_CHARS: 'Не более 128 символов',
+    NO_MORE_THAN_2000_CHARS: 'Не более 2000 символов',
+    ONLY_NUMBERS: 'Только цифры',
+    ONLY_NUMBERS_AND_DOTS: 'Только цифры',
+    ACCEPT_TERMS_OF_USE: 'Подпишите согласие политики обработки персональных данных',
+    TRANSFER_OF_PERSONAL_DATA: 'Подпишите согласие на условие передачи персональных данных',
+    PERSONAL_DATA_PROCESSING: 'Подпишите согласие на условие передачи персональных данных',
+    ACCEPT_PAID_SERVICES_AGREEMENT: 'Подпишите согласие на условия об оказании услуг'
+}

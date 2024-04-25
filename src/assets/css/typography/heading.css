@@ -1,0 +1,24 @@
+@layer base {
+    h1, h2, h3, .title-h1, .title-h2, .title-h3 {
+        @apply font-golos;
+    }
+
+    h1 {
+        @apply text-4xl font-semibold md:font-medium md:text-2xl mt-8 md:mt-4;
+    }
+
+    .title-h1 {
+        @apply text-4.5xl leading-13 font-semibold md:font-medium md:text-2xl mt-8 md:mt-4;
+    }
+
+    h2, .title-h2 {
+        @apply text-3.5xl leading-11 md:leading-8 font-semibold md:text-1.5xl;
+    }
+
+    h3, .title-h3 {
+        @apply text-2xl font-semibold md:text-lg;
+    }
+    h4, .title-h4 {
+        @apply text-lg font-semibold md:text-lg;
+    }
+}

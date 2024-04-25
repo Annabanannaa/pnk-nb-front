@@ -1,0 +1,7 @@
+.Vue-Toastification__toast {
+    @apply bg-white text-black-500;
+}
+
+.Vue-Toastification__close-button {
+    @apply text-black-500
+}

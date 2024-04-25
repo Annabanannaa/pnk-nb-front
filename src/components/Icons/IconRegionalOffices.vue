@@ -1,0 +1,25 @@
+<template>
+    <svg viewBox="0 0 25 24" fill="none">
+        <path d="M22.4568 21.9561L2.54688 21.9561" stroke="#253978" stroke-width="2" stroke-linecap="round" />
+        <path d="M17.4784 21.9541V6.02617C17.4784 4.14905 17.4784 3.21049 16.8952 2.62734C16.3121 2.04419 15.3735 2.04419 13.4964 2.04419H11.5054C9.6283 2.04419 8.68973 2.04419 8.10659 2.62734C7.52344 3.21049 7.52344 4.14905 7.52344 6.02617V21.9541" stroke="#253978" stroke-width="2" />
+        <path d="M21.4588 21.9542V8.515C21.4588 7.11686 21.4588 6.41779 21.1233 5.91562C20.978 5.69822 20.7914 5.51156 20.574 5.3663C20.0718 5.03076 19.3727 5.03076 17.9746 5.03076" stroke="#253978" stroke-width="2" />
+        <path d="M3.54102 21.9542V8.515C3.54102 7.11686 3.54102 6.41779 3.87656 5.91562C4.02182 5.69822 4.20847 5.51156 4.42587 5.3663C4.92805 5.03076 5.62711 5.03076 7.02525 5.03076" stroke="#253978" stroke-width="2" />
+        <path d="M12.5 21.956V18.9695" stroke="#253978" stroke-width="2" stroke-linecap="round" />
+        <path d="M10.5098 12.0002H14.4917" stroke="#253978" stroke-width="2" stroke-linecap="round" />
+        <path d="M6.0293 11.0037H7.52254" stroke="#253978" stroke-width="2" stroke-linecap="round" />
+        <path d="M6.0293 13.9902H7.52254" stroke="#253978" stroke-width="2" stroke-linecap="round" />
+        <path d="M17.4785 11.0037H18.9718" stroke="#253978" stroke-width="2" stroke-linecap="round" />
+        <path d="M17.4785 13.9902H18.9718" stroke="#253978" stroke-width="2" stroke-linecap="round" />
+        <path d="M6.0293 8.01733H7.52254" stroke="#253978" stroke-width="2" stroke-linecap="round" />
+        <path d="M17.4785 8.01733H18.9718" stroke="#253978" stroke-width="2" stroke-linecap="round" />
+        <path d="M10.5098 14.9866H14.4917" stroke="#253978" stroke-width="2" stroke-linecap="round" />
+        <ellipse
+            cx="12.5008"
+            cy="7.02175"
+            rx="1.99099"
+            ry="1.99099"
+            stroke="#253978"
+            stroke-width="2"
+        />
+    </svg>
+</template>

@@ -1,0 +1,7 @@
+/* Пойдут стили для заголовков, ссылок, таблиц и прочих */
+/* Лучше стили разделять по функционалу в папке ./typography и подключать сюда */
+
+@import "./typography/heading.css";
+@import "./typography/index.css";
+@import "./typography/numberedList.css";
+@import "./typography/bulletedList.css";

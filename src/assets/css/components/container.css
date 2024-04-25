@@ -1,0 +1,8 @@
+@layer components {
+    .container {
+        max-width: var(--container-max-width);
+        padding-left: var(--container-margin);
+        padding-right: var(--container-margin);
+        @apply mx-auto;
+    }
+}

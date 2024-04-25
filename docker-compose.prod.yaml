@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+    varnish:
+        restart: unless-stopped
+        ports:
+            - "${HTTP_HOST}:${HTTP_PORT}:80"
+
+    nginx:
+        restart: unless-stopped
+        volumes:
+            - ./dist:/app/dist:cached
+
+    frontend:
+        restart: unless-stopped
+
+    imgproxy:
+        restart: unless-stopped

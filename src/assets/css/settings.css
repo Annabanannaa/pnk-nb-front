@@ -1,0 +1,13 @@
+@layer base {
+    :root {
+        --base-font-size: 16px;
+        --container-margin: 3.75rem;
+        --container-max-width: 90rem;
+    }
+
+    @screen sm {
+        :root {
+            --container-margin: 1rem;
+        }
+    }
+}

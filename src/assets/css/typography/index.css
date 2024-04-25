@@ -1,0 +1,25 @@
+@layer base {
+    strong, b {
+        @apply font-semibold;
+    }
+
+    a:not(.btn) {
+        @apply text-black hover:!text-blue inline-flex;
+    }
+
+    .typography {
+        @apply space-y-6;
+
+        h1, h2, h3, h4, .title-h1, .title-h2, .title-h3, .title-h4 {
+            @apply first:!mt-0 !mt-9;
+        }
+
+        a {
+            @apply text-blue-400 hover:text-blue inline-flex;
+        }
+
+        p {
+            @apply leading-6 sm:text-lg sm:leading-6.5
+        }
+    }
+}

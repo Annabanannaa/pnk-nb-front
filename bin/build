@@ -1,0 +1,18 @@
+#!/bin/sh
+set -e
+
+echo "Building production"
+
+echo " "
+
+mkdir -p src/public/images
+
+docker-compose up -d --build --force-recreate --remove-orphans
+
+# Копирование статики для дальнейщей отдачи через nginx
+mkdir -p dist
+docker cp "$(docker compose ps -q frontend)":/app/.output/public/. ./dist
+
+echo " "
+
+echo "Production built successfully"

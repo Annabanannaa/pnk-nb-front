@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+    varnish:
+        restart: unless-stopped
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${CI_ENVIRONMENT_DOMAIN}`)"
+            - "traefik.http.routers.${COMPOSE_PROJECT_NAME}-no-http-auth.rule=Host(`${CI_ENVIRONMENT_DOMAIN}`) && (PathPrefix(`/app.webmanifest`) || PathPrefix(`/api`))"
+            - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.tls.certresolver=default"
+            - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.middlewares=auth"
+
+    nginx:
+        restart: unless-stopped
+        volumes:
+            - /web/storage/$COMPOSE_PROJECT_NAME/dist:/app/dist:cached
+
+    frontend:
+        restart: unless-stopped
+
+    imgproxy:
+        restart: unless-stopped

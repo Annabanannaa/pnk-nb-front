@@ -1,0 +1,10 @@
+{
+    "name": "Налоговое Бюро Палаты налоговых консультантов",
+    "short_name": "Налоговое Бюро",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Налоговое Бюро Палаты налоговых консультантов",
+    "icons": [],
+    "screenshots": []
+}
